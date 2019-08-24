@@ -1,0 +1,206 @@
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+    .custom_w_1 {
+        width: 15%
+    }
+    .custom_w_2 {
+        width: 65%;
+        padding-right: 45px;
+    }
+    .custom_w_3 {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1450px) {
+    .items_selected_list .delet_item i {
+        top: 51%;
+        font-size: 14px;
+    }
+    .total_price_wrap {
+        text-align: center;
+    }
+    .total_price_wrap span {
+        float: none;
+        margin-top: 15px;
+        display: block;
+    }
+    .order_btn i {
+        display: none;
+    }
+    .item_action .item_price {
+        font-size: 20px;
+        letter-spacing: 0px;
+        margin-top: 10px;
+    }
+    .item_img {
+        width: 20%;
+        padding-top: 10px;
+    }
+    .item_desc {
+        width: 55%;
+        padding-left: 15px;
+    }
+    .item_action {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .slider_capture h2 {
+        font-size: 77px;
+    }
+    .slider_capture p {
+        font-size: 24px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .main_menu li a {
+        font-size: 18px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .social_icon li a {
+        font-size: 16px;
+        padding: 12px 5px;
+    }
+    .m_filter {
+        text-align: center;
+    }
+    .m_filter ul li {
+        display: inline-block;
+        margin-bottom: 70px;
+    }
+    .m_filter ul li a {
+        padding-right: 13px;
+        padding-left: 13px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 992px) {
+    .slider_capture h2 {
+        font-size: 35px;
+    }
+    .slider_capture p {
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .ios-device .slider_capture h2 {
+        font-size: 50px;
+    }
+    .ios-device .slider_capture p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+    .header {
+        position: relative;
+        background: #040404;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .navbar-default .navbar-collapse > .row {
+        padding-left: 15px;
+        background: #040404;
+    }
+    .navbar-default .navbar-collapse {
+        overflow: hidden;
+    }
+    .main_menu {
+        padding-top: 20px;
+    }
+    .main_menu li {
+        display: block;
+        text-align: left;
+    }
+    .main_menu li a {
+        font-family: 'lato', serif;
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        color: #fff;
+    }
+    .social_icon {
+        float: none;
+        width: 100%;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: -5px;
+    }
+    .social_icon li a {
+        color: #ef3125;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .slider_capture {
+        padding-left: 40px;
+        padding-right: 40px;
+        z-index: 10;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .wdw_slider {
+        height: -webkit-calc(100vh - 137px);
+        height: -moz-calc(100vh - 137px);
+        height: calc(100vh - 137px);
+    }
+    .content_wrapper {
+        position: relative
+    }
+    .owl-controls {
+        display: none;
+    }
+    .details_table {
+        background: rgba(0, 0, 0, 0.94);
+    }
+    .details_table .row > div:nth-child(2) .details_box,
+    .details_table .row > div:nth-child(3) .details_box {
+        padding-left: 0;
+    }
+    .details_box {
+        margin-bottom: 15px;
+    }
+    .details_table .row > div:nth-child(2) .details_box:before,
+    .details_table .row > div:nth-child(3) .details_box:before {
+        display: none;
+    }
+    
+    .page_banner{
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 450px) {
+    .xxs_full_width {
+        width: 100%;
+    }
+    .m_item {
+        text-align: center;
+    }
+    .item_img {
+        text-align: center;
+    }
+    .item_img img {
+        display: inline-block;
+    }
+    .footer p {
+        font-size: 11px;
+    }
+}

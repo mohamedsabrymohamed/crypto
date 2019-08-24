@@ -1,0 +1,776 @@
+/* =======================================================
+Project  Name: 
+Project URI:  Local Host.
+Description: 
+Version: 1.0.
+Author: 
+Author URI: 
+===========================================================*/
+
+/*=======  Stylesheet Content ===========
+
+00 -  Reset & General Rules.
+
+=======>>>>>>>>>>>>>>>>>>>>>>> */
+
+/*####################################################################
+############   00 -  Reset & General Rules.    ############
+#################################################################### */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    color: #6e6e6e;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ol,
+ul,
+dl {
+    margin-bottom: 0;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #6e6e6e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    color: #151515;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0f0f0f;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    line-height: 1.428571429;
+    color: #696969;
+    font-size: 16px;
+}
+
+
+input,
+input:focus,
+button:focus {
+    outline: none;
+}
+
+
+/*=====  Owl Caeousel Reset ======= */
+
+.owl-carousel,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item {
+    height: 100%
+}
+
+
+/* End Owl caeousel reset */
+
+/*======= General Class   ==========*/
+
+.main_padding {
+    /*Section vertical Padding */
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.small_padding {
+    /*Section small vertical Padding */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+/* Responsive padding */
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+    .main_padding {
+        /*Section vertical Padding */
+        padding-top: 42px;
+        padding-bottom: 100px;
+    }
+    .small_padding {
+        /*Section small vertical Padding */
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.no-padding {
+    /* reset padding between col*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin {
+    /* reset row margin */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.display_flex {
+    /*To Vertical Alignment*/
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.light-text,
+.light-text:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn {
+    font-size: 16px;
+}
+
+.sm-btn {
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.divider {
+    height: 25px;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    border-color: #ec4134;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+    background-color: #ec3a2d;
+    border-color: #f44336;
+}
+
+/*####################################################################
+############    01  - Header .     ############
+#################################################################### */
+
+.intro {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*header*/
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #313131;
+}
+
+.fixed-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: transparent;
+}
+
+.main-nav {
+    padding-top: 10px;
+    /* width:  100%; */
+}
+
+.main-nav > li {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    padding-top: 12px;
+}
+
+.main-nav__currancy {
+    color: #fff;
+    font-size: 16px;
+}
+
+/*intro content*/
+
+.intro__content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 60px;
+}
+
+.intro__content__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.7;
+}
+
+.intro__content__p {
+    color: #fff;
+}
+
+
+/*notifications*/
+
+.notifications-btn {
+    color: #fff;
+    font-size: 22px;
+    margin-top: -4px;
+    position: relative;
+    cursor: pointer;
+}
+.notifications-btn .notif-count {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #f44336;
+    font-size:  14px;
+    position:  absolute;
+    top: -4px;
+    right: -13px;
+}
+
+/***************************************
+##component
+reg-form
+***************************************/
+
+.reg-form {
+    padding-top: 20px;
+}
+
+.form-control {
+    height: 46px;
+}
+
+/***************************************
+##section
+footer
+***************************************/
+
+.footer__copyright {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    margin: 0;
+    background-color: #101010;
+}
+
+
+/***************************************
+##Pages
+User page
+***************************************/
+
+.user-page {
+    background-color: #eef2f3;
+}
+
+.user-page-content {
+    background-color: #fff;
+    padding: 20px 40px;
+    min-height: 490px;
+}
+
+.user-page-content__title {
+    font-size: 23px;
+    color: #5cb85c;
+    margin-bottom: 21px;
+    margin-top: 15px;
+}
+
+
+/***************************************
+##component
+user sidebar
+***************************************/
+
+.user-page-sidebar {
+    display: block;
+}
+
+.user-page-sidebar ul li {
+    color: #666;
+    font-size: 16px;
+}
+
+.user-page-sidebar ul li a {
+    display: block;
+    padding: 20px 25px;
+}
+
+.user-page-sidebar ul li i {
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+.user-page-sidebar ul li span {}
+
+.user-page-sidebar ul li a:hover,
+.user-page-sidebar ul li a.active {
+    a background-color: #fff;
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/***************************************
+##component
+custom user header
+***************************************/
+
+.main-nav > li.user {
+    padding-top: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.main-nav > li.user img {
+    max-width: 40px;
+}
+
+.user__name.pull-right {
+    padding-top: 6px;
+    padding-left: 14px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.user .dropdown-menu {
+    top: 95%;
+    left: auto;
+}
+
+.main-nav > li.user:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/***************************************
+##component
+account-nav
+***************************************/
+
+.account-nav {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #5cb85c;
+}
+
+.account-nav li {
+    float: left;
+    margin-right: 3px;
+}
+
+.account-nav li a {
+    display: block;
+    background-color: #eef2f3;
+    color: #949494;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.account-nav li a.active,
+.account-nav li a:hover {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+/***************************************
+##component
+account form
+***************************************/
+
+.account-form label {
+    font-size: 14px;
+}
+
+.account-form select,
+.account-form input {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+}
+
+.account-form .btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 100px;
+}
+
+/***************************************
+##component
+Table
+***************************************/
+
+.user-page-content__desc {
+    font-size: 14px;
+}
+
+.user-page-content__desc thead {
+    background: #5cb85c;
+    color: #fff;
+}
+
+.user-page-content__desc a.logout {
+    color: #5cb85c;
+}
+
+.user-page-content__desc table th {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+}
+
+.user-page-content__desc table td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+}
+
+/***************************************
+##component
+Label
+***************************************/
+
+.label-balance {
+    font-size: 21px;
+    padding: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #b7b7b7;
+}
+
+.alert-warning {
+    color: #D28F34;
+    background-color: #FFFB9A;
+    border-color: #faebcc;
+}
+
+
+/***************************************
+##Page
+Holdings page
+***************************************/
+
+.balance_addresses {
+    padding-top: 20px;
+}
+
+.balance_addresses > div {}
+
+.balance_addresses > div > a {
+    margin-top: 2px;
+    display: inline-block;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #f1f1f1;
+    padding: 10px 20px;
+}
+
+
+
+/***************************************
+##Page
+Login page
+***************************************/
+
+.page-content-min-height {
+    min-height: 500px
+}
+
+.gray--bg {
+    background-color: #eef2f3;
+}
+
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.form-wrapper__title {
+    color: #5cb85c;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.checkbox {
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.checkbox a {
+    color: #5cb85c;
+}
+
+.checkbox input {
+    left: 20px;
+    top: 0;
+}
+
+.form-text {
+    margin-top: 14px;
+    font-size: 16px;
+}
+
+.form-text a {
+    color: #5cb85c;
+}
+
+.block {
+    display: block;
+}
+
+
+.authenticat-code {
+    padding: 15px;
+}
+
+.authenticat-code .form-wrapper__title {
+    font-size: 20px;
+}
+
+
+/***************************************
+##component
+datatable
+***************************************/
+
+.dataTable {
+    padding-top: 20px;
+    margin-bottom: 30px !important;
+    padding-bottom: 20px;
+
+}
+
+.dataTables_filter input {
+    height: 34px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 1px solid transparent !important;
+}
+
+.dataTables_length select {
+    width: 111px;
+    height: 30px;
+    padding: 0 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dataTable td {
+    vertical-align: middle !important;
+}
+
+table.dataTable tbody tr:hover {
+    background: #fbfafa;
+}
+
+
+/***************************************
+##component
+popup
+***************************************/
+
+.popup {
+    background: rgba(0, 0, 0, 0.81);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    display: none;
+}
+
+.popup__content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.close-pop {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block;
+    color: #fff;
+    background-color: #5cb85c;
+    cursor: pointer;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+
+.pop_cancelation_reason {
+    color: #000;
+    background: rgba(255, 255, 255, 0.9411764705882353);
+    padding: 30px;
+    border-top: 7px solid #5cb85c;
+}
+
+
+/***************************************
+##Page
+Authenticstion Page
+***************************************/
+
+.downlosd-app {
+    margin-right: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.divider-sm {
+    height: 10px;
+}
+
+
+
+
+
+
+.sms-code-btn {
+	    position: absolute;
+    top: 8px;
+    right: 25px;
+    background: #5cb85c;
+    display: block;
+    padding: 4px 8px;
+    color: #fff;
+}
+
+.password_code {
+	background-color: #5cb85c;
+    color: white;
+    padding: 4px 8px;
+}
+
+
+
+/*********************************
+Payment request page
+*********************************/
+
+.paymentequest {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .paymentequest * {
+        line-height: 1.9;
+    }
+    .paymentequest__title {
+        color: #07B29B;
+        font-size: 43px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    .bold {
+        font-weight: 900;
+        color: #585858;
+    }
+
+    .payment-amount {
+        color: #07B29B;
+    }
+    .img-wrap {
+        margin-top:50px;
+    }
